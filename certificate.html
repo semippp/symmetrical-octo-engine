@@ -17,16 +17,26 @@
             height: 100vh;
             background-color: #f4f4f4;
         }
-        .certificate-container {
-            width: 800px; /* Fixed width */
-            height: 600px; /* Fixed height */
-            background: white;
-            border: 5px solid black;
-            padding: 40px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            transform-origin: top left;
-            transform: scale(1); /* Default scale */
-        }
+       .certificate-container {
+    width: 80vw; /* Adjust width based on viewport width */
+    max-width: 800px; /* Maximum width */
+    height: auto; /* Adjust height automatically */
+    aspect-ratio: 4/3; /* Maintain aspect ratio */
+    background: white;
+    border: 5px solid black;
+    padding: 2vw; /* Adjust padding based on screen size */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    
+    /* Centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Scaling for responsiveness */
+    transform-origin: center;
+    transform: scale(1);
+}
         h1 {
             font-size: 36px;
             color: #4CAF50;
